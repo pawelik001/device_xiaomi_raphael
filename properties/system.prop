@@ -59,7 +59,7 @@ ro.lmk.log_stats=true
 ro.logd.size=2M
 
 # Maintainer
-ro.spos.maintainer=DanipunK1
+ro.spos.maintainer=pawelik001
 
 # Media
 av.offload.enable=true
