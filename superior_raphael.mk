@@ -15,11 +15,11 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Superior stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
-# ViPER4Android FX
+# Inherit ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Inherit Google Camera
-$(call inherit-product-if-exists, vendor/Gcam/config.mk)
+# Inherit MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
 # Rom Flags
 SYSTEM_OPTIMIZE_JAVA := true
