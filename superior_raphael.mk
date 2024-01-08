@@ -13,23 +13,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Personal
-MATRIXX_MAINTAINER := NATO66613
-MATRIXX_CHIPSET := SM8150
-MATRIXX_BATTERY := 4000mAh
-MATRIXX_DISPLAY := 1080x2400
-WITH_GMS := true
+# Supex
 TARGET_HAS_UDFPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_raphael
+PRODUCT_NAME := superior_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := MI 9T Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_CHARACTERISTICS := nosdcard
