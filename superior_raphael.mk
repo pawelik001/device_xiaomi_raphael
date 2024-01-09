@@ -16,13 +16,20 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
-#Boot Animation
-scr_resolution := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+SUPERIOR_UDFPS_ANIMATIONS := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+#BUILD_WITH_GAPPS := true
+#USE_QUICKPIC := true
+#USE_DUCKDUCKGO := false
+#USE_ViaBrowser := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_raphael
+PRODUCT_NAME := superior_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro

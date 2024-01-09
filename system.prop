@@ -21,6 +21,9 @@ log.tag.CHIUSECASE=ERROR
 # Charger
 ro.charger.enable_suspend=true
 
+# Maintainer
+ro.spos.maintainer=pawelik001
+
 # CNE and DPM
 persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=1
